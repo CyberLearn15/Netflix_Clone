@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-image: url("bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+
+body {
+    background-color: black;
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 60vw;
+    justify-content: space-between;
+    height: 100px;
+    gap: 20px;
+}
+
+nav img {
+    width: 130px;
+    position: relative;
+    z-index: 10;
+
+    /*isse logo popup hoga*/
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.content {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    height: 542px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    /*z-index: 10;*/
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.content> :first-child {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.content> :nth-child(2) {
+    font-weight: 400px;
+    font-size: 24px text-align:center;
+}
+
+.content> :nth-child(3) {
+    /* >iska mtlb ki immediate next child par effect hoga*/
+    font-weight: 400px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.line {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.btn {
+    padding: 1px 7px;
+    font-weight: 400px;
+}
+
+.english {
+    background-color: rgba(23, 23, 23, 0.2);
+    color: white;
+    font-weight: bolder;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.red-sm {
+    background-color: red;
+    border-radius: 7px;
+    font-weight: 500px;
+    margin-top: 0px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.red-btn {
+    background-color: red;
+    border-radius: 7px;
+    font-weight: 500px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.main input {
+    font-weight: 500px;
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 70vw;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:574px) {
+    nav{
+        max-width: 90vw;
+    }
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .content> :first-child {
+        font-size: 32px;
+    }
+
+    .content> :nth-child(2) {
+        font-size: 18px
+    }
+
+    .content> :nth-child(3) {
+        font-size: 18px
+    }
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg img {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    position: relative;
+    width: 555px;
+    z-index: 10;
+}
+
+.secimg video {
+    position: absolute;
+    /* top: 120px;
+    right: 22px;
+    width: 456px;*/
+    top: 70px;
+    right: 112px;
+    width: 344px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+section .first>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+section .secimg>div {
+    position: absolute;
+    top: 70px;
+    right: 112px;
+    width: 344px;
+
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    margin: auto;
+    padding: 30px;
+}
+
+footer .questions {
+    padding: 34px 0;
+    display: flex;
+    align-items: center;
+    font-family: Family "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    margin: auto;
+}
+
+media screen and (max-width:1300px)and {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        margin: auto;
+    }
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+
+}
+
+.footer a {
+    color: white;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*media queries needs to be put to make it more responsive*/
